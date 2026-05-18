@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020617;
+  color: white;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+select {
+  background-color: #0f172a !important; /* slate-900 */
+  color: white !important;
+}
+
+option {
+  background-color: #0f172a !important;
+  color: white !important;
+}
+@keyframes blob1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes blob2 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-50px, 40px) scale(1.2);
+  }
+  66% {
+    transform: translate(30px, -30px) scale(0.95);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes blob3 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, 50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-40px, -20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob1 {
+  animation: blob1 12s ease-in-out infinite;
+}
+
+.animate-blob2 {
+  animation: blob2 14s ease-in-out infinite;
+}
+
+.animate-blob3 {
+  animation: blob3 16s ease-in-out infinite;
+}
